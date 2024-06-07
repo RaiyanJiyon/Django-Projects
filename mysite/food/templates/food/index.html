@@ -6,6 +6,10 @@
     <title>Django Template</title>
 </head>
 <body>
-    <h1>This is a template file</h1>
+    {% for item in item_list %}
+    <ul>
+        <li>{{item.id}} --> {{item.item_name}}</li>
+    </ul>
+    {% endfor %}
 </body>
 </html>
