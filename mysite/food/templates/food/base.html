@@ -29,6 +29,7 @@
                 <a class="nav-item nav-link" href="{% url 'logout' %}">Logout</a>
             {% else %}
                 <a class="nav-item nav-link" href="{% url 'login' %}">Login</a>
+                <a href="{% url "profile" %}">Profile</a>
             {% endif %}
         </div>
     </nav>
